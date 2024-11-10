@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add Animate.css library for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="max-w-7xl mx-auto p-6 bg-[#030713] text-white">
+        <!-- Header Section -->
+        <div class="flex items-center space-x-6 animate__animated animate__fadeIn">
+            <img src="https://via.placeholder.com/150" alt="Profile" class="h-24 w-24 rounded-full shadow-lg transform hover:scale-110 transition-transform duration-300">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-100">John Doe</h1>
+                <p class="text-lg text-gray-400">Full Stack Developer</p>
+                <p class="text-gray-500">San Francisco, CA</p>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">LinkedIn</a>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">GitHub</a>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- About Me Section -->
+        <section class="mt-8 animate__animated animate__fadeIn">
+            <h2 class="text-xl font-semibold text-gray-100">About Me</h2>
+            <p class="mt-2 text-gray-400">
+                I am a passionate developer with 5+ years of experience in building scalable web applications. I specialize in JavaScript, React, Node.js, and cloud services. My goal is to create impactful software that helps businesses and users alike. I love to collaborate with creative teams to solve real-world problems.
+            </p>
+        </section>
+    
+        <!-- Skills Section -->
+        <section class="mt-8 animate__animated animate__fadeIn">
+            <h2 class="text-xl font-semibold text-gray-100">Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-4">
+                <div class="flex items-center space-x-2">
+                    <img src="https://via.placeholder.com/30" alt="JavaScript" class="h-8 w-8">
+                    <span class="font-semibold text-gray-100">JavaScript</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="https://via.placeholder.com/30" alt="React" class="h-8 w-8">
+                    <span class="font-semibold text-gray-100">React</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="https://via.placeholder.com/30" alt="Node.js" class="h-8 w-8">
+                    <span class="font-semibold text-gray-100">Node.js</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="https://via.placeholder.com/30" alt="Tailwind CSS" class="h-8 w-8">
+                    <span class="font-semibold text-gray-100">Tailwind CSS</span>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Experience Section -->
+        <section class="mt-8 animate__animated animate__fadeIn">
+            <h2 class="text-xl font-semibold text-gray-100">Experience</h2>
+            <div class="mt-4 space-y-4">
+                <div class="flex items-start space-x-4">
+                    <img src="https://via.placeholder.com/50" alt="Company 1" class="h-12 w-12 rounded-full shadow-md">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-100">Senior Developer at XYZ Corp</h3>
+                        <p class="text-gray-400">Jan 2020 - Present</p>
+                        <p class="text-gray-500 mt-2">Worked on developing scalable web applications using React, Node.js, and AWS. Led a team of junior developers and collaborated with designers to create user-friendly interfaces.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <img src="https://via.placeholder.com/50" alt="Company 2" class="h-12 w-12 rounded-full shadow-md">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-100">Frontend Developer at ABC Ltd.</h3>
+                        <p class="text-gray-400">Jun 2017 - Dec 2019</p>
+                        <p class="text-gray-500 mt-2">Worked on front-end development using HTML, CSS, and JavaScript. Created responsive web designs and implemented interactive UI components.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Portfolio Section -->
+        <section class="mt-8 animate__animated animate__fadeIn">
+            <h2 class="text-xl font-semibold text-gray-100">Portfolio</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4">
+                <div class="bg-[#0F1726] p-4 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1" class="w-full h-40 object-cover rounded-md">
+                    <h3 class="mt-2 text-lg font-semibold text-gray-100">Project Title</h3>
+                    <p class="text-gray-400">Short description of the project, explaining what was built and the impact it had.</p>
+                </div>
+                <div class="bg-[#0F1726] p-4 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2" class="w-full h-40 object-cover rounded-md">
+                    <h3 class="mt-2 text-lg font-semibold text-gray-100">Project Title</h3>
+                    <p class="text-gray-400">Short description of the project, explaining what was built and the impact it had.</p>
+                </div>
+                <div class="bg-[#0F1726] p-4 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3" class="w-full h-40 object-cover rounded-md">
+                    <h3 class="mt-2 text-lg font-semibold text-gray-100">Project Title</h3>
+                    <p class="text-gray-400">Short description of the project, explaining what was built and the impact it had.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Testimonials Section -->
+        <section class="mt-8 animate__animated animate__fadeIn">
+            <h2 class="text-xl font-semibold text-gray-100">Client Testimonials</h2>
+            <div class="mt-4 space-y-4">
+                <div class="flex items-start space-x-4">
+                    <img src="https://via.placeholder.com/50" alt="Client 1" class="h-12 w-12 rounded-full shadow-md">
+                    <div>
+                        <p class="text-gray-400">"John is an amazing developer! He helped us build a scalable solution that improved our efficiency significantly."</p>
+                        <p class="font-semibold text-gray-100">- Jane Doe, CEO of XYZ Corp</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Rating Section -->
+        <section class="mt-8 animate__animated animate__fadeIn">
+            <h2 class="text-xl font-semibold text-gray-100">Ratings</h2>
+            <div class="mt-4 flex items-center space-x-2">
+                <span class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</span>
+                <span class="text-gray-400">4.8/5 based on 120 reviews</span>
+            </div>
+        </section>
+    
+        <!-- Contact Section -->
+        <section class="mt-8 animate__animated animate__fadeIn">
+            <h2 class="text-xl font-semibold text-gray-100">Contact</h2>
+            <p class="mt-2 text-gray-400">Email me at: <a href="mailto:contact@johndoe.com" class="text-blue-600 hover:text-blue-800 transition duration-300">contact@johndoe.com</a></p>
+        </section>
+    
+        <!-- Footer Section -->
+        <footer class="mt-8 text-center text-gray-400">
+            <p>&copy; 2024 John Doe. All rights reserved.</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

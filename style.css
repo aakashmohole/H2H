@@ -1,0 +1,108 @@
+.custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #1a202c; /* Darker background for track */
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #4a5568; /* Darker gray for thumb */
+    border-radius: 10px;
+    border: 2px solid #1a202c; /* Adds some padding to the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #718096; /* Lighter on hover */
+}
+
+
+/* Add Tailwind Animations */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animate__fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  .animate__fadeInUp {
+    animation-name: fadeInUp;
+  }
+  
+  /* Button Hover Animation */
+  button:hover {
+    background-color: #2563eb;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Styling Q&A Items */
+  .qna-item {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .qna-item:hover {
+    background-color: #374151;
+  }
+  
+  .answer p {
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .qna-item.open .answer p {
+    max-height: 200px;
+    transition: max-height 0.5s ease-in;
+  }
+  
+
+
+/* Tailwind Custom Animations */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animate__fadeInUp {
+    animation-name: fadeInUp;
+  }
+  
+  .category-card, .service-card, .testimonial-card {
+    transition: all 0.3s ease;
+  }
+  
+  .category-card:hover, .service-card:hover, .testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  a:hover {
+    background-color: #2563eb;
+    transition: all 0.3s ease-in-out;
+  }
+  

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forum-cummunity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add Animate.css library for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body> 
+<main class="w-full min-h-screen bg-[#030713] ">
+    <section class="bg-[#030713] ">
+            <div class=" flex justify-center ">
+                <div class=" w-full h-80 bg-blue-600 ">
+                    <img src="./background-community.gif" class="w-full h-full object-cover">
+                </div>
+
+                <form class="flex items-center max-w-sm mx-auto absolute top-28 left-[45%]">   
+                    <label for="simple-search" class="sr-only">Search</label>
+                    <div class="relative w-full  bg-[030713]">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5v10M3 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0V6a3 3 0 0 0-3-3H9m1.5-2-2 2 2 2"/>
+                            </svg>
+                        </div>
+                        <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search topics..." required />
+                    </div>
+                    <button type="submit" class="p-2.5 ms-2 text-sm font-medium text-white bg-[#524AE6] rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                        <span class="sr-only">Search</span>
+                    </button>
+                </form>
+            </div>
+    </section>
+
+    
+    <!-- overview section  -->
+    <section>
+        <!-- component -->
+        <div class="py-6 px-12 space-y-12 bg-[#030713] w-full animate__animated animate__fadeInDown">
+            <section class="grid grid-cols-1 gap-6   md:grid-cols-4 bg-[#6264EB] divide-x w-full rounded-lg animate__animated animate__fadeInDown">
+                <div class="flex px-8 py-5 cursor-pointer text-white items-center hover:bg-gray-900 ">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-white font-bold">Overview</div>
+                        <div class="mt-0.5 text-sm text-white">The NeuraFlow's Hub is a vibrant, community-driven forum designed for freelancers to connect, share knowledge, and grow their businesses.</div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer text-gray-900 items-center hover:bg-gray-900">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-white font-bold">Community Engagement</div>
+                        <div class="mt-0.5 text-sm text-white">The Freelancers' Hub is built on active participation and collaboration. Join lively discussions, attend virtual meetups, and contribute your expertise to help others.</div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer text-white items-center hover:bg-gray-900">
+
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-white font-bold">Contacts</div>
+                    <div class="mt-0.5 text-sm text-white">For any questions or support, our dedicated team is always ready to help. You can easily reach out through the forum's private messaging system or by emailing our support team.</div>
+                    </div>
+                </div>
+
+                <div class="flex px-8 py-5 cursor-pointer text-gray-900 items-center hover:bg-gray-900">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-white font-bold">NeuraFlow Community</div>
+                        <div class="mt-0.5 text-sm text-white">The NeuraFlow Community is a collaborative space for developers, data scientists, and AI enthusiasts to connect, share knowledge, and collaborate on neural network projects. </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- CONTENT GOES HERE -->
+            <div class="flex flex-col h-full w-full mx-auto  space-y-6">
+                <section class="flex flex-col mx-auto bg-[#0f1726] rounded-lg p-6 shadow-md space-y-6 w-full">
+
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full min-w-0">
+                        <!-- In use -->
+                        <div class="flex flex-col px-6 py-2 bg-[#030713] shadow rounded-lg overflow-hidden">
+                            <div class="flex flex-col items-center space-y-2">
+                                <div class="text-6xl font-bold tracking-tight leading-none text-blue-500">1500+</div>
+                                <div class="text-lg font-medium text-blue-500">Users</div>
+                            </div>
+                        </div>
+                        <!-- renovation -->
+                        <div class="flex flex-col px-6 py-2 bg-[#030713] shadow rounded-lg overflow-hidden">
+                            <div class="flex flex-col items-center space-y-2">
+                                <div class="text-6xl font-bold tracking-tight leading-none text-amber-500">1200+</div>
+                                <div class="text-lg font-medium text-amber-600">Freelancers</div>
+                            </div>
+                        </div>
+                        <!-- Suspended -->
+                        <div class="flex flex-col px-6 py-2 bg-[#030713] shadow rounded-lg overflow-hidden">
+                            <div class="flex flex-col items-center space-y-2">
+                                <div class="text-6xl font-bold tracking-tight leading-none text-red-500">24</div>
+                                <div class="text-lg font-medium text-red-600">Compaines</div>
+                            </div>
+                        </div>
+                        <!-- Closed -->
+                        <div class="flex flex-col px-6 py-2 bg-[#030713] shadow rounded-lg overflow-hidden">
+                            <div class="flex flex-col items-center space-y-2">
+                                <div class="text-6xl font-bold tracking-tight leading-none text-white">38</div>
+                                <div class="text-lg font-medium text-white">MNC</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- 3 Cards  -->
+    <section class="bg-[#030713] px-4  animate__animated animate__fadeInUp">
+        <div class="container mx-auto p-6">
+            <h1 class="text-4xl font-bold text-center text-gray-100 mb-6 animate__animated animate__fadeInDown">Community Events & Webinars</h1>
+            <p class="text-center text-gray-300 mb-8 animate__animated animate__fadeInUp">Stay updated on upcoming events, webinars, and networking opportunities designed to help freelancers thrive.</p>
+        
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <a href="event-announcements.html" class="bg-[#0F1726] p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover:bg-[#6B21A8] transform hover:-translate-y-1 animate__animated animate__zoomIn">
+                <img src="https://images.unsplash.com/photo-1712903276864-79723b184ffa?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Events" class="w-full h-40 rounded-t-lg mb-4 object-cover">
+                <h2 class="text-2xl font-semibold text-gray-200">Event Announcements</h2>
+                <p class="text-gray-400 mt-2">Get the latest news on upcoming events, workshops, and conferences in freelancing.</p>
+              </a>
+              
+              <a href="webinar-recordings.html" class="bg-[#0F1726] p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover:bg-[#6B21A8] transform hover:-translate-y-1 animate__animated animate__zoomIn">
+                <img src="https://plus.unsplash.com/premium_photo-1661754876215-247b4db12e83?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Webinars" class="w-full h-40 rounded-t-lg mb-4 object-cover">
+                <h2 class="text-2xl font-semibold text-gray-200">Webinar Recordings & Recaps</h2>
+                <p class="text-gray-400 mt-2">Watch recordings and read summaries of past webinars to learn at your own pace.</p>
+              </a>
+              
+              <a href="virtual-meetups.html" class="bg-[#0F1726] p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover:bg-[#6B21A8] transform hover:-translate-y-1 animate__animated animate__zoomIn">
+                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Meetups" class="w-full h-40 rounded-t-lg mb-4 object-cover">
+                <h2 class="text-2xl font-semibold text-gray-200">Virtual Meetups & Networking</h2>
+                <p class="text-gray-400 mt-2">Join virtual meetups to network with fellow freelancers and industry experts.</p>
+              </a>
+            </div>
+          </div>
+        
+    </section>
+    
+    <!-- end 3 cards  -->
+    
+    <!-- post section  -->
+    <section class="bg-[#030713] animate__animated animate__fadeInUp">
+        <!-- component -->
+        <div class="px-8 pb-80 bg-[#030713]">
+            <!-- Main -->
+            <main class="">
+                <div class="px-4">
+
+                <div class="my-5 flex items-center justify-between bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 h-8 w-auto">
+                    <h2 class="text-lg font-semibold text-gray-100 m-4">Recent Topics</h2>
+                </div>
+                <div class="mb-6 sm:w-1/2 rounded-lg bg-[#0f1726] p-6 hover:-translate-y-1 animate__animated animate__zoomIn">
+                    <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img class="mr-2 h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?q=80&w=1921&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
+                        <div>
+                        <h3 class="text-base font-semibold text-gray-100">Kotler Philips</h3>
+                        <span class="block text-xs font-normal text-gray-400">Web Developer</span>
+                        </div>
+                    </div>
+                    <p class="text-sm font-medium text-indigo-300"><span class="mr-0.5">+</span>Follow</p>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between text-sm font-semibold text-gray-100">
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-5 w-5 text-base text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 11.25h9m-9 3h6m3.6 6.3a.75.75 0 00-.6-.3h-7.8a2.25 2.25 0 01-2.25-2.25v-10.5A2.25 2.25 0 017.5 4.5h9A2.25 2.25 0 0118.75 6.75v10.5a.75.75 0 01-.15.6l-2.25 2.25c-.2.2-.45.3-.75.3h-.3a.75.75 0 01-.3-.3z"/>
+                        </svg>
+                        
+                        <span class="mr-1">40</span> Comments
+                    </div>
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-1 h-5 w-6 text-yellow-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>                        
+                        577  
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- From the community -->
+
+                <div class="px-4">
+                    <div class="my-5 flex items-center justify-between bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-8 w-auto">
+                        <h2 class="text-lg font-semibold text-gray-100 m-4">From the Community</h2>
+                    </div>
+                <div class="grid sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 ">
+                    <div class="mb-6 rounded-lg bg-[#0f1726] p-6 hover:-translate-y-1 animate__animated animate__zoomIn">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                        <img class="mr-2 h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
+                        <div>
+                            <h3 class="text-base font-semibold text-gray-100">Alex Stanton</h3>
+                            <span class="block text-xs font-normal text-gray-400">UI / UX Designer</span>
+                        </div>
+                        </div>
+                        <p class="text-sm font-medium text-indigo-300"><span class="mr-0.5">+</span>Follow</p>
+                    </div>
+                    <p class="my-6 text-sm font-normal text-gray-400">Hi, I'm Jessica Jane. I am a doctoral student at Harvard University majoring in Web . . .</p>
+                    <div class="mt-6 flex items-center justify-between text-sm font-semibold text-gray-100">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-5 w-5 text-base text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 11.25h9m-9 3h6m3.6 6.3a.75.75 0 00-.6-.3h-7.8a2.25 2.25 0 01-2.25-2.25v-10.5A2.25 2.25 0 017.5 4.5h9A2.25 2.25 0 0118.75 6.75v10.5a.75.75 0 01-.15.6l-2.25 2.25c-.2.2-.45.3-.75.3h-.3a.75.75 0 01-.3-.3z"/>
+                            </svg>                            
+                        <span class="mr-1">40</span> Comments
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-1 h-5 w-6 text-yellow-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>                            
+                        577  
+                        </div>
+                    </div>
+                    </div>
+                    <div class="mb-6 rounded-lg bg-[#0f1726] p-6 hover:-translate-y-1 animate__animated animate__zoomIn">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                        <img class="mr-2 h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
+                        <div>
+                            <h3 class="text-base font-semibold text-gray-100">Antoine</h3>
+                            <span class="block text-xs font-normal text-gray-300">Android Developer</span>
+                        </div>
+                        </div>
+                        <p class="text-sm font-medium text-indigo-300"><span class="mr-0.5">+</span>Follow</p>
+                    </div>
+                    <p class="my-6 text-sm font-normal text-gray-400">Hi, I'm Alex Stanton. I am a doctoral student at Oxford University majoring in UI / UX . . .</p>
+                    <div class="mt-6 flex items-center justify-between text-sm font-semibold text-gray-100">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-5 w-5 text-base text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 11.25h9m-9 3h6m3.6 6.3a.75.75 0 00-.6-.3h-7.8a2.25 2.25 0 01-2.25-2.25v-10.5A2.25 2.25 0 017.5 4.5h9A2.25 2.25 0 0118.75 6.75v10.5a.75.75 0 01-.15.6l-2.25 2.25c-.2.2-.45.3-.75.3h-.3a.75.75 0 01-.3-.3z"/>
+                            </svg>                            
+                        <span class="mr-1">40</span> Comments
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-1 h-5 w-6 text-yellow-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>                            
+                        577  
+                        </div>
+                    </div>
+                    </div>
+                    <div class="mb-6 rounded-lg bg-[#0f1726] p-6 hover:-translate-y-1 animate__animated animate__zoomIn">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                        <img class="mr-2 h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
+                        <div>
+                            <h3 class="text-base font-semibold text-gray-100">Richard Kyle</h3>
+                            <span class="block text-xs font-normal text-gray-300">2D Design</span>
+                        </div>
+                        </div>
+                        <p class="text-sm font-medium text-indigo-300"><span class="mr-0.5">+</span>Follow</p>
+                    </div>
+                    <p class="my-6 text-sm font-normal text-gray-400">Hi, I'm Antoine Griezmann. I'm an Android Developer at Google company . . .</p>
+                    <div class="mt-6 flex items-center justify-between text-sm font-semibold text-gray-100">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-5 w-5 text-base text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 11.25h9m-9 3h6m3.6 6.3a.75.75 0 00-.6-.3h-7.8a2.25 2.25 0 01-2.25-2.25v-10.5A2.25 2.25 0 017.5 4.5h9A2.25 2.25 0 0118.75 6.75v10.5a.75.75 0 01-.15.6l-2.25 2.25c-.2.2-.45.3-.75.3h-.3a.75.75 0 01-.3-.3z"/>
+                            </svg>                            
+                        <span class="mr-1">40</span> Comments
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-1 h-5 w-6 text-yellow-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>                            
+                        577  
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="grid sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3">
+                    <div class="mb-6 rounded-lg bg-[#0f1726] p-6 hover:-translate-y-1 animate__animated animate__zoomIn">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                        <img class="mr-2 h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
+                        <div>
+                            <h3 class="text-base font-semibold text-gray-100">Alex Stanton</h3>
+                            <span class="block text-xs font-normal text-gray-400">UI / UX Designer</span>
+                        </div>
+                        </div>
+                        <p class="text-sm font-medium text-indigo-300"><span class="mr-0.5">+</span>Follow</p>
+                    </div>
+                    <p class="my-6 text-sm font-normal text-gray-400">Hi, I'm Jessica Jane. I am a doctoral student at Harvard University majoring in Web . . .</p>
+                    <div class="mt-6 flex items-center justify-between text-sm font-semibold text-gray-100">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-5 w-5 text-base text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 11.25h9m-9 3h6m3.6 6.3a.75.75 0 00-.6-.3h-7.8a2.25 2.25 0 01-2.25-2.25v-10.5A2.25 2.25 0 017.5 4.5h9A2.25 2.25 0 0118.75 6.75v10.5a.75.75 0 01-.15.6l-2.25 2.25c-.2.2-.45.3-.75.3h-.3a.75.75 0 01-.3-.3z"/>
+                            </svg>                            
+                        <span class="mr-1">40</span> Comments
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-1 h-5 w-6 text-yellow-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>                            
+                        577  
+                        </div>
+                    </div>
+                    </div>
+                    <div class="mb-6 rounded-lg bg-[#0f1726] p-6 hover:-translate-y-1 animate__animated animate__zoomIn">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                        <img class="mr-2 h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
+                        <div>
+                            <h3 class="text-base font-semibold text-gray-100">Antoine</h3>
+                            <span class="block text-xs font-normal text-gray-300">Android Developer</span>
+                        </div>
+                        </div>
+                        <p class="text-sm font-medium text-indigo-300"><span class="mr-0.5">+</span>Follow</p>
+                    </div>
+                    <p class="my-6 text-sm font-normal text-gray-400">Hi, I'm Alex Stanton. I am a doctoral student at Oxford University majoring in UI / UX . . .</p>
+                    <div class="mt-6 flex items-center justify-between text-sm font-semibold text-gray-100">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-5 w-5 text-base text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 11.25h9m-9 3h6m3.6 6.3a.75.75 0 00-.6-.3h-7.8a2.25 2.25 0 01-2.25-2.25v-10.5A2.25 2.25 0 017.5 4.5h9A2.25 2.25 0 0118.75 6.75v10.5a.75.75 0 01-.15.6l-2.25 2.25c-.2.2-.45.3-.75.3h-.3a.75.75 0 01-.3-.3z"/>
+                            </svg>                            
+                        <span class="mr-1">40</span> Comments
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-1 h-5 w-6 text-yellow-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>                            
+                        577  
+                        </div>
+                    </div>
+                    </div>
+                    <div class="mb-6 rounded-lg bg-[#0f1726] p-6 hover:-translate-y-1 animate__animated animate__zoomIn">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                        <img class="mr-2 h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile" />
+                        <div>
+                            <h3 class="text-base font-semibold text-gray-100">Richard Kyle</h3>
+                            <span class="block text-xs font-normal text-gray-300">2D Design</span>
+                        </div>
+                        </div>
+                        <p class="text-sm font-medium text-indigo-300"><span class="mr-0.5">+</span>Follow</p>
+                    </div>
+                    <p class="my-6 text-sm font-normal text-gray-400">Hi, I'm Antoine Griezmann. I'm an Android Developer at Google company . . .</p>
+                    <div class="mt-6 flex items-center justify-between text-sm font-semibold text-gray-100">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-5 w-5 text-base text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 11.25h9m-9 3h6m3.6 6.3a.75.75 0 00-.6-.3h-7.8a2.25 2.25 0 01-2.25-2.25v-10.5A2.25 2.25 0 017.5 4.5h9A2.25 2.25 0 0118.75 6.75v10.5a.75.75 0 01-.15.6l-2.25 2.25c-.2.2-.45.3-.75.3h-.3a.75.75 0 01-.3-.3z"/>
+                            </svg>                            
+                        <span class="mr-1">40</span> Comments
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-1 h-5 w-6 text-yellow-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>                            
+                        577  
+                        </div>
+                    </div>
+                    </div>  
+                </div>
+                <!-- End from community  -->
+
+                 <!-- Community post -->
+                 <section class="bg-[#030713] pt-2">
+                    <div class="my-5 flex items-center justify-between bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-8 w-auto">
+                        <h2 class="text-lg font-semibold text-gray-100 m-4">Topic Based Forums</h2>
+                    </div>
+                    <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-6 relative">
+                        <div class="grid grid-cols-1 sm:grid-cols-12 gap-5">
+                    
+                            <div class="sm:col-span-5">
+                                <a href="#">
+                                    <div class="bg-cover text-center overflow-hidden hover:-translate-y-1 animate__animated animate__zoomIn"
+                                        style="min-height: 300px; background-image: url('https://images.unsplash.com/photo-1719937050792-a6a15d899281?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+                                        title="Woman holding a mug">
+                                    </div>
+                                </a>
+                                <div class="mt-3 bg-[#0f1726] ps-4 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+                                    <div class="">
+                                        <a href="#"
+                                            class="text-xs text-gray-300 uppercase font-medium hover:text-indigo-900 transition duration-500 ease-in-out">
+                                            Music & Audio
+                                        </a>
+                                        <a href="#"
+                                            class="block text-gray-100 font-bold text-2xl mb-2 hover:text-indigo-600 transition duration-500 ease-in-out"> Music & Audio Discussions</a>
+                                        <p class="text-gray-300 text-base mt-2">This is the home for music & audio discussions and news for anyone interested in music, audio engineering, voice-over, and more! A place for sellers and buyers to talk gear, tips & tricks, get feedback, and of course debate what the 1 DAW.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="sm:col-span-7 grid grid-cols-2 lg:grid-cols-3 gap-5">
+                                <div class="">
+                                    <a href="#">
+                                        <div class="h-40 bg-cover text-center overflow-hidden hover:-translate-y-1 animate__animated animate__zoomIn"
+                                            style="background-image: url('https://images.unsplash.com/photo-1487537708572-3c850b5e856e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+                                            title="">
+                                        </div>
+                                    </a>
+                                    <a href="#"
+                                        class="text-gray-300 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">This forum is dedicated to Logo Maker sellers.  </a>
+                                </div>
+                                <div class="">
+                                    <a href="#">
+                                        <div class="h-40 bg-cover text-center overflow-hidden hover:-translate-y-1 animate__animated animate__zoomIn"
+                                            style="background-image: url('https://images.unsplash.com/photo-1719937206498-b31844530a96?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+                                            title="">
+                                        </div>
+                                    </a>
+                                    <a href="#"
+                                        class="text-gray-300 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">Welcome to our Photography forum board! </a>
+                                </div>
+                                <div class="">
+                                    <a href="#">
+                                        <div class="h-40 bg-cover text-center overflow-hidden hover:-translate-y-1 animate__animated animate__zoomIn"
+                                            style="background-image: url('https://images.unsplash.com/photo-1678690833065-965b52c0fa8d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+                                            title="">
+                                        </div>
+                                    </a>
+                                    <a href="#"
+                                        class="text-gray-300 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">
+                                        This is the home for website development and design discussions.</a>
+                                </div>
+                                <div class="">
+                                    <a href="#">
+                                        <div class="h-40 bg-cover text-center overflow-hidden hover:-translate-y-1 animate__animated animate__zoomIn"
+                                            style="background-image: url('https://images.unsplash.com/photo-1528109966604-5a6a4a964e8d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+                                            title="Woman holding a mug">
+                                        </div>
+                                    </a>
+                                    <a href="#"
+                                        class="text-gray-300 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">The place for NeuraFlow video makers, editors, animators, photographers and all interested in the world of video and animation!</a>
+                                </div>
+                                <div class="">
+                                    <a href="#">
+                                        <div class="h-40 bg-cover text-center overflow-hidden hover:-translate-y-1 animate__animated animate__zoomIn"
+                                            style="background-image: url('https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+                                            title="Woman holding a mug">
+                                        </div>
+                                    </a>
+                                    <a href="#"
+                                        class="text-gray-300 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">This is the home for data discussions, where data scientists and analysts share tips, techniques, and inspiration.</a>
+                                </div>
+                                <div class="">
+                                    <a href="#">
+                                        <div class="h-40 bg-cover text-center overflow-hidden hover:-translate-y-1 animate__animated animate__zoomIn"
+                                            style="background-image: url('https://images.unsplash.com/photo-1605152277138-359efd4a6862?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+                                            title="Woman holding a mug">
+                                        </div>
+                                    </a>
+                                    <a href="#"
+                                        class="text-gray-300 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">This forum is dedicated to Logo Maker sellers</a>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </section>
+                <!-- end Community post  -->
+
+
+                <!-- Tranding -->
+                <div class="px-4">
+                    <div class="my-5 flex items-center justify-between bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-8 w-auto">
+                        <h2 class="text-lg font-semibold text-gray-100 m-4">Knowladge <Sharing></Sharing></h2>
+                    </div>
+                    <div class="w-full h-screen">
+                        <div class="flex flex-col lg:grid lg:gap-4 2xl:gap-6 lg:grid-cols-4 2xl:row-span-2 2xl:pb-8 ml-2 pt-4 px-6">
+                          <!-- Beginning of the component about Daniel Clifford -->
+                          <div class="bg-indigo-600 lg:order-1 lg:row-span-1 2xl:row-span-1 lg:col-span-2 rounded-lg shadow-xl mb-5 lg:mb-0">
+                            <div class="mx-6 my-8 2xl:mx-10">
+                              <img class="w-8 md:w-9 lg:w-10 2xl:w-20 h-8 md:h-9 lg:h-10 2xl:h-20 rounded-full border-2 ml-1 lg:ml-3 2xl:ml-0 md:-mt-1 2xl:-mt-4" src="https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                              <h1 class="text-white text-xs md:text-base 2xl:text-2xl pl-12 lg:pl-16 2xl:pl-20 -mt-8 md:-mt-10 lg:-mt-11 2xl:-mt-20 2xl:mx-8">Daniel Clifford</h1>
+                              <h2 class="text-white text-opacity-50 text-xs md:text-base 2xl:text-2xl pl-12 lg:pl-16 2xl:pl-20 2xl:my-2 2xl:mx-8">Verified Graduate</h2>
+                            </div>
+                            <div class="-mt-6 relative">
+                              <p class="text-white text-xl 2xl:text-4xl font-bold px-7 lg:px-9 2xl:pt-6 2xl:mx-2">I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</p>
+                              <br />
+                              <p class="text-white text-opacity-50 font-medium md:text-sm 2xl:text-3xl px-7 lg:px-9 mb-3 2xl:pb-8 2xl:mx-2">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+                            </div>
+                          </div>
+                          <!-- Ending of the component about Daniel Clifford -->
+                  
+                          <!-- Beginning of the component about Jonathan Walters -->
+                          <div class="bg-gray-900 lg:order-2 lg:row-span-1 2xl:row-span-1 lg:col-span-1 rounded-lg shadow-xl pb-4 mb-5 lg:mb-0">
+                            <div class="mx-8 2xl:mx-10 my-10">
+                              <img class="w-8 md:w-9 2xl:w-20 h-8 md:h-9 2xl:h-20 rounded-full border-2 -ml-1 -mt-2 lg:-mt-4" src="https://images.pexels.com/photos/634021/pexels-photo-634021.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                              <h1 class="text-white text-xs md:text-base 2xl:text-2xl pl-11 md:pl-12 2xl:pl-24 -mt-8 md:-mt-10 2xl:-mt-16">Jonathan Walters</h1>
+                              <h2 class="text-white text-xs md:text-base 2xl:text-2xl text-opacity-50 pl-11 md:pl-12 2xl:pl-24">Verified Graduate</h2>
+                            </div>
+                            <div class="-mt-8 mx-1 lg:mx-2">
+                              <p class="text-white text-lg lg:text-xl 2xl:text-4xl font-semibold pt-1 px-6 2xl:px-8 lg:pl-5 lg:pr-8">The team was very supportive and kept me motivated</p>
+                              <br />
+                              <p class="text-white text-opacity-50 font-medium md:text-sm 2xl:text-3xl pl-6 lg:pl-5 pr-4 -mt-1 lg:mt-6 2xl:mt-2 2xl:px-8">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
+                            </div>
+                          </div>
+                          <!-- Ending of the component about Jonathan Walters -->
+                  
+                          <!-- Beginning of the component about Jeanette Harmon -->
+                          <div class="bg-[#83B4FC] lg:order-3 lg:row-span-2 2xl:row-span-1 lg:col-span-1 rounded-lg shadow-xl mb-5 lg:mb-0 2xl:mb-8">
+                            <div class="mx-8 my-10 lg:my-8">
+                              <img class="w-8 md:w-9 lg:w-11 2xl:w-20 h-8 md:h-9 lg:h-11 2xl:h-20 rounded-full border-2 -mt-3 -ml-1 lg:-ml-0" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                              <h1 class="primary-color-blackish-blue text-xs md:text-base 2xl:text-2xl pl-11 md:pl-12 lg:pl-14 2xl:pl-24 -mt-8 md:-mt-10 lg:-mt-11 2xl:-mt-16">Jeanette Harmon</h1>
+                              <h2 class="primary-color-blackish-blue-opacity text-xs md:text-base 2xl:text-2xl pl-11 md:pl-12 lg:pl-14 2xl:pl-24">Verified Graduate</h2>
+                            </div>
+                            <div class="-mt-4 ml-5 mr-11">
+                              <p class="primary-color-blackish-blue text-xl 2xl:text-4xl font-bold px-2 lg:px-3 -mt-6 lg:-mt-5 2xl:mt-12 2xl:pb-6">An overall wonderful and rewarding experience</p>
+                              <br />
+                              <p class="primary-color-blackish-blue-opacity font-medium md:text-sm 2xl:text-3xl pl-2 lg:pl-3 lg:pr-4 mb-6 2xl:pt-2 -mt-3">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+                            </div>
+                          </div>
+                          <!-- Ending of the component about Jeanette Harmon -->
+                  
+                          <!-- Beginning of the component about Patrick Abrams -->
+                          <div class="bg-purple-800 lg:order-4 lg:row-span-2 2xl:row-span-1 col-span-2 rounded-lg shadow-xl mb-5 lg:mb-0 2xl:mb-8 lg:pb-14 2xl:pb-20">
+                            <div class="mx-8 my-8">
+                              <img class="w-8 md:w-9 lg:w-10 2xl:w-20 h-8 md:h-9 lg:h-10 2xl:h-20 rounded-full border-2 lg:-mt-3" src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                              <h1 class="text-white text-xs md:text-base 2xl:text-2xl pl-12 md:pl-14 2xl:pl-24 -mt-8 md:-mt-10 lg:-mt-11 2xl:-mt-16">Patrick Abrams</h1>
+                              <h2 class="text-white text-xs md:text-base 2xl:text-2xl text-opacity-50 pl-12 md:pl-14 2xl:pl-24">Verified Graduate</h2>
+                            </div>
+                            <div class="px-3 -mt-3 mb-5 lg:mb-0">
+                              <p class="text-white text-lg 2xl:text-4xl font-semibold px-4 -mt-3 lg:-mt-6 2xl:mt-8">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</p>
+                              <br />
+                              <p class="text-white text-opacity-50 font-medium md:text-sm 2xl:text-3xl px-4 mt-1 lg:-mt-3 2xl:mt-6">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of lgart and amazing people. ”</p>
+                            </div>
+                          </div>
+                          <!-- Ending of the component about Patrick Abrams -->
+                  
+                          <!-- Beginning of the component about Kira Whittle -->
+                          <div class="bg-[#CA4EC7] lg:order-2 lg:row-span-4 lg:col-span-1 rounded-lg shadow-xl mb-5 lg:pb-4 2xl:h-screen">
+                            <div class="mx-8 my-8 lg:pl-1">
+                              <img class="w-8 md:w-9 lg:w-12 2xl:w-20 h-8 md:h-9 lg:h-12 2xl:h-20 rounded-full border-2 lg:-mt-4 -ml-1 lg:-ml-4" src="https://images.pexels.com/photos/3762804/pexels-photo-3762804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                              <h1 class="primary-color-blackish-blue text-xs md:text-base 2xl:text-2xl pl-10 md:pl-12 2xl:pl-24 -mt-8 md:-mt-10 lg:-mt-12 2xl:-mt-16">Kira Whittle</h1>
+                              <h2 class="primary-color-blackish-blue-opacity text-xs md:text-base 2xl:text-2xl pl-10 md:pl-12 2xl:pl-24">Verified Graduate</h2>
+                            </div>
+                            <div class="px-3 lg:px-5 lg:-mt-4 mb-5 lg:mb-0">
+                              <p class="primary-color-blackish-blue text-xl 2xl:text-4xl font-semibold px-4 lg:px-0 -mt-2 lg:-mt-0">Such a life-changing experience. Highly recommended!</p>
+                              <br />
+                              <p class="primary-color-blackish-blue-opacity font-medium md:text-sm 2xl:text-3xl px-4 lg:px-0 2xl:px-4 lg:pr-3 mt-2 lg:-mt-1 2xl:mt-2 2xl:pb-64">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”</p>
+                            </div>
+                          </div>
+                          <!-- Ending of the component about Kira Whittle -->
+                        </div>
+                      </div>
+                </div>
+                <!-- End Trending Topics -->
+
+
+                 <!-- marketplce and services -->
+            
+                <!-- Header Section -->
+                <header class=" pt-48 text-center animate__animated animate__fadeIn">
+                    <h1 class="text-4xl font-extrabold text-gray-100">Marketplace & Service Exchange</h1>
+                    <p class="text-xl mt-2 text-gray-400">Explore services, products, and connect with freelancers and buyers</p>
+                </header>
+
+                <!-- Categories Section -->
+                <section class="categories mt-16 px-12 animate__animated animate__fadeInUp">
+                    <h2 class="text-3xl font-semibold text-gray-100 text-center mb-10">Browse Categories</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Category Card 1 -->
+                    <div class="category-card bg-gray-800 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                        <a href="marketplace-details.html">
+                            <img src="https://images.unsplash.com/photo-1576085898274-069be5a26c58?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Category 1" class="w-full h-40 object-cover">
+                        </a>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-blue-400">Web Development</h3>
+                            <p class="text-gray-400 mt-2">Find skilled developers for your website projects.</p>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 2 -->
+                    <div class="category-card bg-gray-800 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                        <a href="marketplace-details.html">
+                            <img src="https://images.unsplash.com/photo-1576085898274-069be5a26c58?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Category 1" class="w-full h-40 object-cover">
+                        </a>                        <div class="p-4">
+                        <h3 class="text-xl font-semibold text-blue-400">Graphic Design</h3>
+                        <p class="text-gray-400 mt-2">Hire talented designers for your branding needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 3 -->
+                    <div class="category-card bg-gray-800 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                        <a href="marketplace-details.html">
+                            <img src="https://images.unsplash.com/photo-1576085898274-069be5a26c58?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Category 1" class="w-full h-40 object-cover">
+                        </a>                        <div class="p-4">
+                        <h3 class="text-xl font-semibold text-blue-400">Marketing Services</h3>
+                        <p class="text-gray-400 mt-2">Boost your business with expert marketing strategies.</p>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 4 -->
+                    <div class="category-card bg-gray-800 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                        <a href="marketplace-details.html">
+                            <img src="https://images.unsplash.com/photo-1576085898274-069be5a26c58?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Category 1" class="w-full h-40 object-cover">
+                        </a>                        <div class="p-4">
+                        <h3 class="text-xl font-semibold text-blue-400">Photography</h3>
+                        <p class="text-gray-400 mt-2">Capture memories with professional photographers.</p>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+                <!-- Featured Services Section -->
+                <section class="featured-services mt-16 px-12 animate__animated animate__fadeInUp">
+                    <h2 class="text-3xl font-semibold text-gray-100 text-center mb-10">Featured Services</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="service-card bg-gray-800 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1576085898274-069be5a26c58?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service 1" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                        <h3 class="text-xl font-semibold text-blue-400">SEO Optimization</h3>
+                        <p class="text-gray-400 mt-2">Get your website ranked higher on search engines with expert SEO services.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="service-card bg-gray-800 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1576085898274-069be5a26c58?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service 2" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                        <h3 class="text-xl font-semibold text-blue-400">Content Writing</h3>
+                        <p class="text-gray-400 mt-2">Engaging and creative content for your business or blog.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="service-card bg-gray-800 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1576085898274-069be5a26c58?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service 3" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                        <h3 class="text-xl font-semibold text-blue-400">App Development</h3>
+                        <p class="text-gray-400 mt-2">Get a mobile app developed for your business needs.</p>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+                <!-- Testimonials Section -->
+                <section class="testimonials mt-16 px-12 animate__animated animate__fadeInUp">
+                    <h2 class="text-3xl font-semibold text-gray-100 text-center mb-10">What Our Users Say</h2>
+                    <div class="flex justify-center gap-10">
+                    <div class="testimonial-card bg-gray-800 p-8 rounded-lg shadow-xl text-center transform hover:scale-105 transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1510520434124-5bc7e642b61d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="User 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <p class="text-gray-400">"The platform helped me find the perfect developer for my project. Highly recommend it!"</p>
+                        <p class="font-semibold text-blue-400 mt-2">John Doe</p>
+                    </div>
+                    
+                    <div class="testimonial-card bg-gray-800 p-8 rounded-lg shadow-xl text-center transform hover:scale-105 transition duration-300">
+                        <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection2.jpg" alt="User 2" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <p class="text-gray-400">"I found the best photographer for my event, and the experience was seamless."</p>
+                        <p class="font-semibold text-blue-400 mt-2">Jane Smith</p>
+                    </div>
+                    </div>
+                </section>
+
+            <!-- end marketplce and Services -->
+            </main>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- New Post -->
+<div class="bg-blue-700">
+<div data-dial-init class="fixed end-6 bottom-6 group">
+    <div id="speed-dial-menu-default" class="flex flex-col items-center hidden mb-4 space-y-2">
+        <button type="button" data-tooltip-target="tooltip-print" data-tooltip-placement="left" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/>
+              </svg>              
+            <span class="sr-only">Post</span>
+        </button>
+        <div id="tooltip-print" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Post
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <button type="button" data-tooltip-target="tooltip-download" data-tooltip-placement="left" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
+            <svg class="w-[26px] h-[26px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 16 5-7 6 6.5m6.5 2.5L16 13l-4.286 6M14 10h.01M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
+              </svg>              
+            <span class="sr-only">Image Post</span>
+        </button>
+        <div id="tooltip-download" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Image Post
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <button type="button" data-tooltip-target="tooltip-copy" data-tooltip-placement="left" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-sm dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Zm0 0-4 4m5 0H4m1 0 4-4m1 4 4-4m-4 7v6l4-3-4-3Z"/>
+              </svg>              
+            <span class="sr-only">Video Post</span>
+        </button>
+        <div id="tooltip-copy" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Video Post
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+    </div>
+    <button type="button" data-dial-toggle="speed-dial-menu-default" aria-controls="speed-dial-menu-default" aria-expanded="false" class="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
+        <svg class="w-5 h-5 transition-transform group-hover:rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+        </svg>
+        <span class="sr-only">Open actions menu</span>
+    </button>
+</div>
+
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

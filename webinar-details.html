@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webinar Details - Freelancing 101</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#030713] font-sans text-white">
+
+  <div class="container mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center text-gray-200 mb-6">Freelancing 101 Webinar</h1>
+    <p class="text-center text-gray-400 mb-4">Recorded on March 1, 2024</p>
+    
+    <!-- Video Section -->
+    <div class="w-full mb-8">
+      <video controls class="w-full h-96 rounded-lg shadow-lg">
+        <source src="https://www.youtube.com/watch?v=XO8wew38VM8" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- YouTube Video Section
+    <div class="w-full mb-8">
+        <iframe width="100%" height="480" src="https://www.youtube.com/watch?v=XO8wew38VM8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> -->
+
+    <!-- Session Highlights -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2">Session Highlights</h2>
+      <ul class="list-disc list-inside text-gray-300 mb-4">
+        <li>Introduction to freelancing and key skills for success</li>
+        <li>Building a strong client base and managing projects</li>
+        <li>Effective time management and pricing strategies</li>
+        <li>Legal aspects and common freelancing challenges</li>
+      </ul>
+    </section>
+
+    <!-- Downloadable Resources -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2">Downloadable Resources</h2>
+      <ul class="text-blue-400 underline mb-4">
+        <li><a href="https://path-to-slide-presentation.pdf" target="_blank">Slide Presentation (PDF)</a></li>
+        <li><a href="https://path-to-webinar-summary.pdf" target="_blank">Webinar Summary (PDF)</a></li>
+        <li><a href="https://path-to-checklist.pdf" target="_blank">Freelancing Checklist (PDF)</a></li>
+      </ul>
+    </section>
+
+    <!-- Feedback Form -->
+    <section id="feedback" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2">We Value Your Feedback</h2>
+      <p class="text-gray-400 mb-4">Please share your thoughts on this webinar to help us improve future sessions.</p>
+      
+      <form action="submit_feedback.php" method="POST" class="bg-[#0F1726] p-6 rounded-lg shadow-lg">
+        <label for="name" class="block text-gray-200 mb-2">Full Name:</label>
+        <input type="text" id="name" name="name" required class="w-full px-3 py-2 mb-4 bg-gray-800 text-gray-200 rounded">
+
+        <label for="email" class="block text-gray-200 mb-2">Email Address:</label>
+        <input type="email" id="email" name="email" required class="w-full px-3 py-2 mb-4 bg-gray-800 text-gray-200 rounded">
+
+        <label for="feedback" class="block text-gray-200 mb-2">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" required class="w-full px-3 py-2 mb-4 bg-gray-800 text-gray-200 rounded"></textarea>
+
+        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition">Submit Feedback</button>
+      </form>
+    </section>
+  </div>
+
+</body>
+</html>

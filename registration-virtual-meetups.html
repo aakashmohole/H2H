@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Meetups & Networking</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#030713] font-sans text-white">
+
+  <div class="container mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center text-gray-200 mb-6">Virtual Meetups & Networking</h1>
+    
+    <!-- Event Details -->
+    <section class="mb-8">
+      <h2 class="text-3xl font-semibold text-blue-400 mb-4">Upcoming Virtual Meetup: Freelancers Networking</h2>
+      <p class="text-gray-400 mb-4">Date: November 20, 2024</p>
+      <p class="text-gray-400 mb-4">Time: 6:00 PM - 7:30 PM IST</p>
+      <p class="text-gray-300 mb-4">Join us for an exciting networking event where freelancers from various industries will come together to share tips, find potential clients, and collaborate on new projects.</p>
+      
+      <!-- Event Agenda -->
+      <h3 class="text-xl font-semibold text-gray-200 mb-2">Agenda</h3>
+      <ul class="list-disc list-inside text-gray-300 mb-4">
+        <li>Introduction and Ice Breakers</li>
+        <li>Tips for Building a Successful Freelancing Career</li>
+        <li>Breakout Rooms for Networking</li>
+        <li>Q&A Session</li>
+        <li>Collaborating and Making Connections</li>
+      </ul>
+    </section>
+
+    <!-- RSVP/Registration Form -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-200 mb-4">RSVP for the Event</h2>
+      <form action="submit_rsvp.php" method="POST" class="bg-[#0F1726] p-6 rounded-lg shadow-lg">
+        <label for="name" class="block text-gray-200 mb-2">Full Name:</label>
+        <input type="text" id="name" name="name" required class="w-full px-3 py-2 mb-4 bg-gray-800 text-gray-200 rounded">
+
+        <label for="email" class="block text-gray-200 mb-2">Email Address:</label>
+        <input type="email" id="email" name="email" required class="w-full px-3 py-2 mb-4 bg-gray-800 text-gray-200 rounded">
+
+        <label for="message" class="block text-gray-200 mb-2">Message or Questions (Optional):</label>
+        <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 mb-4 bg-gray-800 text-gray-200 rounded"></textarea>
+
+        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition">Submit RSVP</button>
+      </form>
+    </section>
+
+    <!-- Zoom or Event Link -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-200 mb-4">Join the Meetup</h2>
+      <p class="text-gray-400 mb-4">The virtual event will be held on Zoom. Click the button below to join the event.</p>
+      <a href="https://zoom.us/j/your_meeting_link_here" target="_blank" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition">Join the Zoom Meeting</a>
+    </section>
+
+    <!-- Networking Opportunities -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-200 mb-4">Networking Platforms</h2>
+      <p class="text-gray-400 mb-4">Join our community of freelancers on the following platforms:</p>
+      <ul class="list-disc list-inside text-blue-400 underline">
+        <li><a href="https://slack.com" target="_blank">Slack Community</a></li>
+        <li><a href="https://discord.com" target="_blank">Discord Server</a></li>
+        <li><a href="https://www.linkedin.com/groups" target="_blank">LinkedIn Group</a></li>
+      </ul>
+    </section>
+
+    <!-- Event Recap (For Past Events) -->
+    <section id="event-recap" class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-200 mb-4">Event Recap</h2>
+      <p class="text-gray-400 mb-4">Missed the last event? Watch the full recording below:</p>
+      <iframe width="100%" height="480" src="https://www.youtube.com/embed/your_video_id_here" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  </div>
+
+</body>
+</html>
