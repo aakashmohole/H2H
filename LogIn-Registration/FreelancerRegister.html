@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#030712] flex items-center justify-center min-h-screen text-gray-200">
+
+    <div class="container mx-auto p-8 flex gap-12">
+        <!-- Left Section -->
+        <div class="w-1/2 space-y-6">
+            <h2 class="text-3xl font-bold">Hey Freelancer, Ready for your next big opportunity ?</h2>
+            <ul class="space-y-4">
+                <li class="flex items-center gap-4">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+                    <span>Answer a few questions and start building your profile</span>
+                </li>
+                <hr class="my-4 border-gray-600 opacity-35">
+                <li class="flex items-center gap-4">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+                    <span>Apply for open roles or list services for clients to buy</span>
+                </li>
+                <hr class="my-4 border-gray-600 opacity-35">
+                <li class="flex items-center gap-4">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+                    <span>Get paid safely and know we’re there to help</span>
+                </li>
+                <hr class="my-4 border-gray-600 opacity-30">    
+            </ul>
+            <div class="mt-4">
+                <button type="button" 
+                        class="w-1/2 py-3 px-6 border-2 border-blue-600 text-blue-600 font-semibold rounded-full hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                        onmouseover="this.style.backgroundColor='#4B90F9'; this.style.color='white';" 
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='#4B90F9';"
+                        onclick="window.location.href='freelancer-info-01.html';">
+                    Get Started →
+                </button> <p class="text-gray-400">It only takes 5-10 minutes and you can edit it later. We’ll save as you go.</p>
+            </div>
+            
+        </div>
+
+        <!-- Right Section -->
+        <div class="w-1/2 relative">
+            <div class="relative max-w-md mx-auto">
+                <!-- Testimonial Card -->
+                <div id="testimonial-card" class="grid mb-8 border border-gray-200 rounded-lg shadow-sm bg-white dark:border-gray-700 dark:bg-gray-800 p-8 text-center">
+                    <figure class="flex flex-col items-center justify-center">
+                        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                            <h3 id="testimonial-title" class="text-lg font-semibold text-gray-900 dark:text-white">Very easy this was to integrate</h3>
+                            <p id="testimonial-text" class="my-4">"If you care for your time, I hands down would go with this."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center">
+                            <img id="testimonial-img" class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture">
+                            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                                <div id="testimonial-name">Bonnie Green</div>
+                                <div id="testimonial-position" class="text-sm text-gray-500 dark:text-gray-400">Developer at Open AI</div>
+                            </div>
+                        </figcaption>    
+                    </figure>
+                </div>
+        
+                <!-- Navigation Buttons centered under the testimonial card -->
+                <div class="flex items-center justify-center mt-6 space-x-4">
+                    <button id="prevButton" title="Previous" class="p-2 text-white transition-colors duration-300 border rounded-full rtl:-scale-x-100 hover:bg-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+        
+                    <button id="nextButton" title="Next" class="p-2 text-white transition-colors duration-300 border rounded-full rtl:-scale-x-100 hover:bg-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>  
+            </div>
+        </div>
+    
+    </div>
+<script>
+// Testimonial data array
+const testimonials = [
+            {
+                title: "Very easy this was to integrate",
+                text: "If you care for your time, I hands down would go with this.",
+                img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png",
+                name: "Bonnie Green",
+                position: "Developer at NeuraFluxD"
+            },
+            {
+                title: "Solid foundation for any project",
+                text: "Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!",
+                img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png",
+                name: "Roberta Casas",
+                position: "Developer at NeuraFluxD"
+            },
+            {
+                title: "Mindblowing workflow",
+                text: "Aesthetically, the well-designed components are beautiful and will undoubtedly level up your next application.",
+                img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png",
+                name: "Jese Leos",
+                position: "Developer at NeuraFluxD"
+            },
+            {
+                title: "Efficient Collaborating",
+                text: "You have many examples that can be used to create a fast prototype for your team.",
+                img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png",
+                name: "Joseph McFall",
+                position: "CTO at Google"
+            }
+        ];
+
+let currentIndex = 0;
+
+// Select elements to update
+const titleElement = document.getElementById("testimonial-title");
+const textElement = document.getElementById("testimonial-text");
+const imgElement = document.getElementById("testimonial-img");
+const nameElement = document.getElementById("testimonial-name");
+const positionElement = document.getElementById("testimonial-position");
+
+// Function to update testimonial content
+function updateTestimonial(index) {
+titleElement.textContent = testimonials[index].title;
+textElement.textContent = testimonials[index].text;
+imgElement.src = testimonials[index].img;
+nameElement.textContent = testimonials[index].name;
+positionElement.textContent = testimonials[index].position;
+}
+
+// Event listeners for navigation buttons
+document.getElementById("prevButton").addEventListener("click", () => {
+currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
+updateTestimonial(currentIndex);
+});
+
+document.getElementById("nextButton").addEventListener("click", () => {
+currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1;
+updateTestimonial(currentIndex);
+});
+
+// Initial testimonial load
+updateTestimonial(currentIndex);
+
+</script>
+</body>
+</html>
