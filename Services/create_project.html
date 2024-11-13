@@ -3,13 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Project</title>
+    <title>Gig Setup</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <section  class="bg-[#030712]"">
+<body class="bg-slate-950 text-white p-10">
+    <div class="max-w-2xl mx-auto bg-gray-900 p-6 rounded-lg">
         
-           
-    </section>
+        <!-- Service Type Section -->
+        <div class="mb-8">
+            <label class="block text-lg font-semibold mb-2" for="service-type">Service Type</label>
+            <select id="service-type" class="w-full p-3 bg-gray-800 text-white rounded-lg border border-gray-700 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                <option>MACHINE LEARNING</option>
+                <option>WEB DEVELOPMENT</option>
+                <option>GRAPHIC DESIGN</option>
+                <!-- Add more service types as needed -->
+            </select>
+        </div>
+
+        <!-- Gig Metadata Section -->
+        <div>
+            <h2 class="text-lg font-semibold mb-4">Gig Metadata</h2>
+            <div class="grid grid-cols-5 gap-4">
+                <!-- Metadata Labels -->
+                <div class="col-span-2 text-gray-300">
+                    <div class="mb-4 font-semibold">EXPERTISE *</div>
+                    <div class="mb-4 font-semibold">PROGRAMMING LANGUAGE *</div>
+                    <div class="mb-4 font-semibold">TOOLS</div>
+                    <div class="mb-4 font-semibold">FRAMEWORKS</div>
+                    <div class="mb-4 font-semibold">APIS</div>
+                </div>
+                
+                <!-- Expertise Checkboxes -->
+                <div class="col-span-3 space-y-2">
+                    <p class="text-sm text-gray-400 mb-3">Select the areas you are an expert in*</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500" checked>
+                            <span>Image processing</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500">
+                            <span>Feature learning</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500" checked>
+                            <span>Classification</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500" checked>
+                            <span>Churn</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500">
+                            <span>Clustering</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500">
+                            <span>Ranking</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500" checked>
+                            <span>Decision trees</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500" checked>
+                            <span>Sentimental analysis</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500">
+                            <span>Software development</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500" checked>
+                            <span>Website development</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500">
+                            <span>App development</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500">
+                            <span>Object detection</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500">
+                            <span>Anomaly detection</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500" checked>
+                            <span>Recommendation systems</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500">
+                            <span>Speech & Audio</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox text-blue-500">
+                            <span>Predictive analysis</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Option -->
+            <div class="flex items-center space-x-2 mt-4">
+                <input type="checkbox" class="form-checkbox text-blue-500">
+                <label class="text-gray-300">Other</label>
+                <span class="text-gray-500">?</span>
+            </div>
+        </div>
+        
+        <!-- Save and Continue Button -->
+        <div class="mt-8">
+            <button class="w-full p-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-white font-semibold transition-colors duration-200">Save and Continue</button>
+        </div>
+    </div>
 </body>
 </html>
