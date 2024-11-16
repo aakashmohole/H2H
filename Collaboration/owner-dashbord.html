@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <div class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold text-center mb-6">Project Owner Dashboard</h1>
+
+    <!-- Incoming Join Requests -->
+    <div class="bg-white p-6 rounded-lg shadow-lg mb-8">
+      <h2 class="text-xl font-semibold mb-4">Incoming Join Requests</h2>
+      <table class="table-auto w-full text-left border">
+        <thead>
+          <tr class="bg-gray-200">
+            <th class="px-4 py-2">Name</th>
+            <th class="px-4 py-2">Skills</th>
+            <th class="px-4 py-2">Message</th>
+            <th class="px-4 py-2">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example Data (Replace with Backend Data) -->
+          <tr>
+            <td class="px-4 py-2">Jane Doe</td>
+            <td class="px-4 py-2">Frontend Development</td>
+            <td class="px-4 py-2">Excited to contribute!</td>
+            <td class="px-4 py-2">
+              <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Approve</button>
+              <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Reject</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2">John Smith</td>
+            <td class="px-4 py-2">Backend Development</td>
+            <td class="px-4 py-2">I have experience in Node.js.</td>
+            <td class="px-4 py-2">
+              <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Approve</button>
+              <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Reject</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Current Team Members -->
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">Current Team Members</h2>
+      <ul class="list-disc pl-6">
+        <li>Jane Doe - Frontend Developer</li>
+        <li>John Smith - Backend Developer</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
