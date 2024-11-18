@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Milestone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 font-sans text-white">
+
+  <div class="container mx-auto py-12">
+    <h1 class="text-4xl font-extrabold text-center mb-8 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-transparent bg-clip-text">
+      Add New Milestone
+    </h1>
+
+    <div class="bg-slate-800 p-8 rounded-lg shadow-lg max-w-lg mx-auto transition-transform transform hover:scale-105">
+      <form action="#" method="POST">
+        <!-- Milestone Title -->
+        <div class="mb-6">
+          <label for="title" class="block text-blue-500 font-semibold mb-2">Milestone Title</label>
+          <input type="text" id="title" name="title" 
+                 class="w-full bg-slate-900 text-white px-4 py-2 rounded-lg border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                 placeholder="Enter milestone title" required>
+        </div>
+
+        <!-- Milestone Description -->
+        <div class="mb-6">
+          <label for="description" class="block text-blue-500 font-semibold mb-2">Description</label>
+          <textarea id="description" name="description" rows="4"
+                    class="w-full bg-slate-900 text-white px-4 py-2 rounded-lg border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Provide a brief description" required></textarea>
+        </div>
+
+        <!-- Amount -->
+        <div class="mb-6">
+          <label for="amount" class="block text-blue-500 font-semibold mb-2">Amount ($)</label>
+          <input type="number" id="amount" name="amount"
+                 class="w-full bg-slate-900 text-white px-4 py-2 rounded-lg border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                 placeholder="Enter milestone amount" required>
+        </div>
+
+        <!-- Skills Required -->
+        <div class="mb-6">
+          <label for="skills" class="block text-blue-500 font-semibold mb-2">Skills Required</label>
+          <input type="text" id="skills" name="skills"
+                 class="w-full bg-slate-900 text-white px-4 py-2 rounded-lg border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                 placeholder="E.g., Frontend Development, Node.js" required>
+        </div>
+
+        <!-- Due Date -->
+        <div class="mb-6">
+          <label for="due_date" class="block text-blue-500 font-semibold mb-2">Due Date</label>
+          <input type="date" id="due_date" name="due_date"
+                 class="w-full bg-slate-900 text-white px-4 py-2 rounded-lg border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" 
+                  class="py-3 px-6 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-semibold rounded-full shadow-lg hover:scale-110 transition-transform">
+            Add Milestone
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

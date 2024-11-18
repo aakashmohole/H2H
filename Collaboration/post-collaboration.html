@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="root">
+        <section id="1" class="bg-[#030712] flex items-center justify-center min-h-screen text-gray-200">
+            <div class="container mx-auto p-8 flex flex-col lg:flex-row gap-6 lg:gap-12">
+                <!-- Left Section -->
+                <div class="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
+                    <!-- Header and Instructions -->
+                    <h2 class="text-2xl lg:text-3xl font-semibold">Let's Start With A Strong TITLE.</h2>
+                    <p class="text-gray-400 mt-2">
+                        This helps your job post stand out to the right candidates. It's the first thing they'll see, so make it count!
+                    </p>
+        
+                    <ul class="space-y-4">
+                        <li class="flex items-center justify-center lg:justify-start gap-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="..." /></svg>
+                            <span>Answer a few questions and Upload Your Collaboration Project.</span>
+                        </li>
+                        <hr class="my-4 border-gray-600 opacity-35">
+                        <li class="flex items-center justify-center lg:justify-start gap-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="..." /></svg>
+                            <span>Provide Clear Details.</span>
+                        </li>
+                        <hr class="my-4 border-gray-600 opacity-35">
+                        <li class="flex items-center justify-center lg:justify-start gap-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="..." /></svg>
+                            <span>Set a Realistic Budget and Timeline.</span>
+                        </li>
+                        <hr class="my-4 border-gray-600 opacity-30">
+                    </ul>
+                </div>
+        
+                <!-- Right Section -->
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="relative max-w-md mx-auto">
+                        <div class="mt-6">
+                            <label for="job-title" class="block text-lg font-medium">
+                                Set a Domain for your PROJECT post
+                            </label><br>
+                            <input type="text" id="job-title" placeholder="Ex. Data Analyst"
+                                class="block w-full lg:w-2/3 p-2 text-sm text-White bg-black rounded-lg border-2 border-gray-600 focus:ring-blue-500 focus:border-blue-500 hover:bg-gray-800 transition-all duration-300">
+                        </div>
+        
+                        <!-- Example Titles Section -->
+                        <div class="mt-6">
+                            <h2 class="text-lg font-semibold">Example titles</h2>
+                            <ul class="list-disc list-inside mt-2 text-gray-300">
+                                <li>Data analyst/BI expert to help automate a series of analytics reports</li>
+                                <li>ETL engineer to integrate multiple data sources into a single dashboard</li>
+                                <li>Python developer to help develop and evaluate NLP solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="2" class="bg-[#030712] flex items-center justify-center min-h-screen text-gray-200">
+            <div class="container mx-auto p-8 flex flex-col lg:flex-row gap-6 lg:gap-12">
+                <!-- Left Section -->
+                <div class="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
+                    <h1 class="text-2xl lg:text-3xl font-semibold text-gray-600 opacity-60">2/3</h1>
+                    <!-- Header and Instructions -->
+                    <h2 class="text-2xl lg:text-3xl font-semibold">Let's Upload Project Information..!!</h2>
+                    <br><br>
+                    <div class="mt-6">
+                        <label for="job-title" class="block text-lg font-medium">Set a Title for your PROJECT post</label><br>
+                        <input type="text" id="job-title" placeholder="Ex. Recommendation System For Freelancers" 
+                            class="block w-full lg:w-3/4 p-2.5 text-sm text-gray-900 bg-black rounded-lg border-2 border-gray-600 focus:ring-blue-500 focus:border-blue-500 hover:bg-gray-800 transition-all duration-300">
+                    </div>
+                
+                    <div class="w-full lg:w-3/4 mt-6">
+                        <label for="message" class="block mb-2 text-lg font-medium">Description</label>
+                        <textarea id="message" rows="4"
+                            class="block w-full text-sm text-gray-900 bg-black rounded-lg border-2 border-gray-600 focus:ring-blue-500 focus:border-blue-500 hover:bg-gray-800 transition-all duration-300"
+                            placeholder="Describe Your Problem Statement Within 250 words only...!!"></textarea>
+                    </div>
+                </div>
+        
+                <!-- Right Section -->
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <!-- Add Skills -->
+                    <br><br><br><br>
+                    <div class="mt-6">
+                        <h2 class="text-lg font-semibold">Skills and Expertise Required</h2>
+                        <div class="flex flex-col lg:flex-row items-center mt-2 gap-2">
+                            <input type="text" id="skill-input" placeholder=" Add Skills"
+                                class="block w-full lg:w-2/4 p-2 text-sm text-White-900 bg-black rounded-lg border-2 border-gray-600 focus:ring-blue-500 focus:border-blue-500 hover:bg-gray-800 transition-all duration-300">
+                            <button id="add-skill-btn"
+                                class="w-full lg:w-auto py-2 px-3 border-2 border-blue-600 text-blue-600 font-semibold rounded-full hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-all duration-300">
+                                +
+                            </button>
+                        </div>
+                        <!-- Display Skills as Tags -->
+                        <div id="skills-container" class="flex flex-wrap gap-2 mt-3">
+                            <!-- Skills will appear here as tags -->
+                        </div>
+                    </div>
+        
+                    <!-- Upload the Document -->
+                    <h2 class="text-lg font-semibold">Upload Project Proposal</h2>
+                    <p class="text-gray-600 text-sm opacity-60 hover:text-white">Upload The Document , Mentioned which task/issues your are facing and make the document with clear statements</p>
+                    <div
+                        class="mt-1 flex flex-col lg:flex-row justify-center lg:justify-start items-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md bg-transparent">
+                        <div class="space-y-1 text-center">
+                            <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                                <path
+                                    d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div class="flex flex-col lg:flex-row text-sm text-gray-600">
+                                <label for="file-upload"
+                                    class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                                    <span>Upload a file</span>
+                                    <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                                </label>
+                                <p class="pl-0 lg:pl-1">or drag and drop</p>
+                            </div>
+        
+                            <p class="text-xs text-gray-500">doc, pdf, pptx minimum size 10MB</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex justify-center lg:justify-end">
+                        <a href="./thank-you.html" class="w-full lg:w-1/4">
+                            <button type="button"
+                                id="btn2"
+                                class="w-full py-3 px-6 border-2 border-blue-600 text-blue-600 font-semibold rounded-full hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                                onmouseover="this.style.backgroundColor='#4B90F9'; this.style.color='white';"
+                                onmouseout="this.style.backgroundColor='transparent'; this.style.color='#4B90F9';">
+                                Post →
+                            </button>
+                        </a>
+                    </div>
+                    
+
+                </div>
+            </div>
+        
+     
+        
+</main>
+</body>
+</html>

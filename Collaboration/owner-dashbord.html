@@ -6,17 +6,19 @@
   <title>Owner Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-slate-950 font-sans text-white">
 
   <div class="container mx-auto py-8">
-    <h1 class="text-3xl font-bold text-center mb-6">Project Owner Dashboard</h1>
+    <h1 class="text-4xl font-extrabold text-center mb-8 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-transparent bg-clip-text">
+      Project Owner Dashboard
+    </h1>
 
-    <!-- Incoming Join Requests -->
-    <div class="bg-white p-6 rounded-lg shadow-lg mb-8">
-      <h2 class="text-xl font-semibold mb-4">Incoming Join Requests</h2>
-      <table class="table-auto w-full text-left border">
+    <!-- Incoming Join Requests Section -->
+    <div class="bg-slate-800 p-6 rounded-lg shadow-lg mb-8 transition-transform transform hover:scale-105">
+      <h2 class="text-2xl font-semibold text-blue-500 mb-4">Incoming Join Requests</h2>
+      <table class="table-auto w-full text-left border border-slate-700">
         <thead>
-          <tr class="bg-gray-200">
+          <tr class="bg-slate-700 text-blue-500">
             <th class="px-4 py-2">Name</th>
             <th class="px-4 py-2">Skills</th>
             <th class="px-4 py-2">Message</th>
@@ -24,37 +26,47 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Example Data (Replace with Backend Data) -->
-          <tr>
+          <tr class="hover:bg-slate-700">
             <td class="px-4 py-2">Jane Doe</td>
             <td class="px-4 py-2">Frontend Development</td>
             <td class="px-4 py-2">Excited to contribute!</td>
             <td class="px-4 py-2">
-              <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Approve</button>
-              <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Reject</button>
+              <button class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition">Approve</button>
+              <button class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition">Reject</button>
             </td>
           </tr>
-          <tr>
+          <tr class="hover:bg-slate-700">
             <td class="px-4 py-2">John Smith</td>
             <td class="px-4 py-2">Backend Development</td>
             <td class="px-4 py-2">I have experience in Node.js.</td>
             <td class="px-4 py-2">
-              <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Approve</button>
-              <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Reject</button>
+              <button class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition">Approve</button>
+              <button class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition">Reject</button>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <!-- Current Team Members -->
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-      <h2 class="text-xl font-semibold mb-4">Current Team Members</h2>
-      <ul class="list-disc pl-6">
-        <li>Jane Doe - Frontend Developer</li>
-        <li>John Smith - Backend Developer</li>
+    <!-- Current Team Members Section -->
+    <div class="bg-slate-800 p-6 rounded-lg shadow-lg mb-8 transition-transform transform hover:scale-105">
+      <h2 class="text-2xl font-semibold text-blue-500 mb-4">Current Team Members</h2>
+      <ul class="list-disc pl-6 text-gray-300 space-y-2">
+        <li><span class="font-bold text-white">Jane Doe</span> - Frontend Developer</li>
+        <li><span class="font-bold text-white">John Smith</span> - Backend Developer</li>
       </ul>
     </div>
+
+    <!-- Add Milestone Button -->
+    
+    <div class="flex justify-center mb-8">
+      <a href="./milestone-form.html" class="w-full lg:w-1/4">
+      <button class="py-3 px-6 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-semibold rounded-full shadow-lg hover:scale-110 transition-transform">
+        Add Milestone
+      </button>
+    </a>
+    </div>
+
   </div>
 
 </body>

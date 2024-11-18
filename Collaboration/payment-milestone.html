@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 font-sans text-white">
+  <div class="container mx-auto py-8">
+
+    <!-- Project Details Section -->
+    <div class="bg-slate-800 p-6 rounded-lg shadow-lg mb-6">
+      <h1 class="text-3xl font-bold text-center mb-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-transparent bg-clip-text">
+        Project: Freelancer Collaboration Tool
+      </h1>
+      <p class="text-gray-300 text-center mb-4">
+        This tool is designed to help freelancers and clients track payment milestones for collaborative projects. 
+        It includes milestone management, GitHub issue linking, and a streamlined user interface.
+      </p>
+      <p class="text-gray-300 text-center">
+        The project ensures transparency, efficient progress tracking, and a better experience for all stakeholders.
+      </p>
+    </div>
+
+    <!-- Milestones Section -->
+    <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+      <h2 class="text-xl font-semibold mb-4 text-blue-500">Your Milestones</h2>
+      <ul id="milestones-list" class="space-y-6">
+        <!-- Milestones will be dynamically inserted here -->
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Example Milestones Data (Replace with API Response)
+    const milestones = [
+      { 
+        description: "Complete the homepage design", 
+        amount: 500, 
+        githubUrl: "https://github.com/your-repo/issues/1", 
+        skills: ["HTML", "CSS", "TailwindCSS"] 
+      },
+      { 
+        description: "Develop backend API endpoints", 
+        amount: 800, 
+        githubUrl: "https://github.com/your-repo/issues/2", 
+        skills: ["Node.js", "Express", "MongoDB"] 
+      },
+      { 
+        description: "Integrate payment gateway", 
+        amount: 700, 
+        githubUrl: "https://github.com/your-repo/issues/3", 
+        skills: ["Payment Gateway APIs", "Security", "Testing"] 
+      },
+    ];
+
+    // Render Milestones on Page
+    const milestonesList = document.getElementById("milestones-list");
+    milestones.forEach((milestone, index) => {
+      const milestoneItem = document.createElement("li");
+      milestoneItem.classList.add("bg-slate-700", "p-6", "rounded-lg", "shadow-lg", "space-y-4");
+
+      milestoneItem.innerHTML = `
+        <div class="flex justify-between items-center">
+          <div>
+            <h3 class="text-xl font-semibold text-blue-500">Milestone ${index + 1}</h3>
+            <p class="text-gray-300">${milestone.description}</p>
+          </div>
+          <p class="text-green-400 font-bold text-lg">$${milestone.amount}</p>
+        </div>
+        <div>
+          <h4 class="text-blue-400 font-semibold">Required Skills:</h4>
+          <ul class="flex space-x-2">
+            ${milestone.skills.map(skill => `
+              <li class="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-bold py-1 px-3 rounded-full text-sm shadow">${skill}</li>
+            `).join("")}
+          </ul>
+        </div>
+        <div class="flex justify-end">
+          <a href="${milestone.githubUrl}" target="_blank" class="py-2 px-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-bold rounded-full shadow-lg hover:bg-blue-500">
+            View Issue
+          </a>
+        </div>
+      `;
+
+      milestonesList.appendChild(milestoneItem);
+    });
+  </script>
+</body>
+</html>

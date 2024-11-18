@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore , Find Collaboration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+
+</head>
+<body>
+    <div class="bg-slate-950 flex bg-gray-900 text-white min-h-screen">
+        
+       <!-- Sidebar -->
+       <aside class="w-64 bg-gray-800 p-4">
+        <h2 class="text-lg font-semibold mb-4 text-white">Filter by</h2><br/>
+      
+        <!-- Select Domains Section -->
+        <h5 class="text-sm font-semibold mb-4 text-white">Select Domains</h5>
+        <ul class="space-y-3">
+          <li class="flex items-center">
+            <input type="checkbox" id="filter-code" class="mr-2">
+            <label for="filter-code" class="text-gray-300 hover:text-white cursor-pointer">
+              Data Science <span class="text-gray-500">(4M)</span>
+            </label>
+          </li>
+          <li class="flex items-center">
+            <input type="checkbox" id="filter-repositories" class="mr-2">
+            <label for="filter-repositories" class="text-gray-300 hover:text-white cursor-pointer">
+              AI & Ml <span class="text-gray-500">(65.2k)</span>
+            </label>
+          </li>
+          <li class="flex items-center">
+            <input type="checkbox" id="filter-issues" class="mr-2">
+            <label for="filter-issues" class="text-gray-300 hover:text-white cursor-pointer">
+              Web Devlopement <span class="text-gray-500">(140k)</span>
+            </label>
+          </li>
+          <li class="flex items-center">
+            <input type="checkbox" id="filter-pull-requests" class="mr-2">
+            <label for="filter-pull-requests" class="text-gray-300 hover:text-white cursor-pointer">
+              Content Writing <span class="text-gray-500">(277k)</span>
+            </label>
+          </li>
+          <li class="flex items-center">
+            <input type="checkbox" id="filter-discussions" class="mr-2">
+            <label for="filter-discussions" class="text-gray-300 hover:text-white cursor-pointer">
+              Video <span class="text-gray-500">(6k)</span>
+            </label>
+          </li>
+        </ul>
+      
+        <!-- Languages Section -->
+        <h5 class="text-sm font-semibold mt-6 mb-4 text-white">Languages</h5>
+        <ul class="space-y-3">
+          <li class="flex items-center">
+            <input type="checkbox" id="language-python" class="mr-2">
+            <label for="language-python" class="text-gray-300 hover:text-white cursor-pointer">
+              Python
+            </label>
+          </li>
+          <li class="flex items-center">
+            <input type="checkbox" id="language-jupyter" class="mr-2">
+            <label for="language-jupyter" class="text-gray-300 hover:text-white cursor-pointer">
+              Jupyter Notebook
+            </label>
+          </li>
+          <li class="flex items-center">
+            <input type="checkbox" id="language-javascript" class="mr-2">
+            <label for="language-javascript" class="text-gray-300 hover:text-white cursor-pointer">
+              JavaScript
+            </label>
+          </li>
+          <li class="flex items-center">
+            <input type="checkbox" id="language-html" class="mr-2">
+            <label for="language-html" class="text-gray-300 hover:text-white cursor-pointer">
+              HTML
+            </label>
+          </li>
+          <li class="flex items-center">
+            <input type="checkbox" id="language-java" class="mr-2">
+            <label for="language-java" class="text-gray-300 hover:text-white cursor-pointer">
+              Java
+            </label>
+          </li>
+        </ul>
+      
+        <!-- new collaboration Button -->
+        <div class="mt-6">
+            <a href="./post-collaboration.html">
+              <button type="button"
+                class="py-1 px-5 border-2 border-blue-600 text-blue-600 font-semibold rounded-full hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                onmouseover="this.style.backgroundColor='#4B90F9'; this.style.color='white';"
+                onmouseout="this.style.backgroundColor='transparent'; this.style.color='#4B90F9';">
+                New Collaboration
+              </button>
+            </a>
+          </div>
+          
+      </aside>
+      
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <div class=" border border-black rounded-full flex justify-between items-center mb-6">
+                <input type="text" placeholder="Search Collaboration" 
+                class="bg-transparent w-full focus:outline-none pr-4 font-semibold border-0 focus:ring-0 px-8 py-0" 
+                name="topic">
+                <button class="flex flex-row items-center justify-center min-w-[150px] px-2 rounded-full font-medium tracking-wide border disabled:opacity-50 transition ease-in-out duration-150 text-base hover:bg-blue-600 hover:text-white border border-gray-800 font-medium tracking-wide  py-1.5 h-[38px]-mr-3" >
+                    Search
+                </button>
+            </div>
+
+            <div class="space-y-4">
+                <!-- First Repository Card -->
+                <div class="bg-gray-800 p-4 rounded-lg shadow">
+                    <!-- Profile Trigger -->
+                    <a href="#" class="flex items-center space-x-4" id="user-profile-trigger">
+                        <img class="w-10 h-10 rounded-full"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPIYoh4hZs0aNfoHV2_ICiEMvWc4im06Y33Q&s"
+                            alt="Jese Leos" />
+                        <div>
+                            <p class="text-base font-semibold text-gray-900 dark:text-white">Jese Leos</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">@jeseleos</p>
+                        </div>
+                    </a>
+            
+                    <!-- PopOver Information -->
+                    <div id="popover-user-profile"
+                        class="absolute z-10 hidden w-64 mt-2 text-sm text-gray-500 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+                        <div class="p-3">
+                            <div class="flex items-center justify-between mb-2">
+                                <a href="#">
+                                    <img class="w-10 h-10 rounded-full"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPIYoh4hZs0aNfoHV2_ICiEMvWc4im06Y33Q&s"
+                                        alt="Jese Leos">
+                                </a>
+                                <div>
+                                    <button type="button"
+                                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Follow</button>
+                                </div>
+                            </div>
+                            <p class="text-base font-semibold leading-none text-gray-900 dark:text-white">
+                                <a href="#">Jese Leos</a>
+                            </p>
+                            <p class="mb-3 text-sm font-normal">
+                                <a href="#" class="hover:underline">@jeseleos</a>
+                            </p>
+                            <ul class="flex text-sm">
+                                <li class="me-2">
+                                    <a href="#" class="hover:underline">
+                                        <span class="font-semibold text-gray-900 dark:text-white">799</span>
+                                        <span>Following</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">
+                                        <span class="font-semibold text-gray-900 dark:text-white">3,758</span>
+                                        <span>Followers</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="">
+                        <br><h1 class="font-bold text-xl text-left">Recommendation Systems</h1>
+                        <p class="leading-relaxed text-left">
+                            Recommendation systems are powerful tools used across various domains like e-commerce, entertainment, social
+                            media, and healthcare to provide personalized suggestions to users.
+                            <span class="hidden" id="more-text">
+                                Broadly, recommendation systems can be classified into three types: content-based systems, which suggest
+                                items similar to what the user has liked before.
+                            </span>
+                        </p>
+                        <button id="toggle-btn" class="mt-4 text-blue-500 focus:outline-none text-left">Read More</button>
+                        <button id="hide-btn" class="hidden mt-4 text-blue-500 focus:outline-none text-left">Hide</button>
+                    </div>
+            
+                    <div class="mt-2 flex justify-between items-center text-sm text-gray-500">
+                        <!-- Left Side: Tags -->
+                        <div class="flex space-x-3 rounded-full">
+                            <span class="bg-gray-700 px-2 py-1 rounded-full hover:text-white">Python</span>
+                            <span class="bg-gray-700 px-2 py-1 rounded-full hover:text-white">Kubernetes</span>
+                            <span class="bg-gray-700 px-2 py-1 rounded-full hover:text-white">Machine Learning</span>
+                            <span>Updated 3 hours ago</span>
+                        </div>
+            
+                        <!-- Right Side: Button -->
+                        <a href="./owner-dashbord.html" class="w-full lg:w-1/4">
+                        <button type="button"
+                            class="py-1 px-5 border-2 border-blue-600 text-blue-600 font-semibold rounded-full hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                            onmouseover="this.style.backgroundColor='#4B90F9'; this.style.color='white';"
+                            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#4B90F9';">
+                            View Details →
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            
+                <!-- Second Repository Card -->
+                <div class="bg-gray-800 p-4 rounded-lg shadow">
+                    <!-- Profile Trigger -->
+                    <a href="#" class="flex items-center space-x-4">
+                        <img class="w-10 h-10 rounded-full"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqkUYrITWyI8OhPNDHoCDUjGjhg8w10_HRqg&s"
+                            alt="Alex Johnson" />
+                        <div>
+                            <p class="text-base font-semibold text-gray-900 dark:text-white">Alex Johnson</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">@alexjohnson</p>
+                        </div>
+                    </a>
+            
+                    <div class="">
+                        <br><h1 class="font-bold text-xl text-left">Machine Learning Basics</h1>
+                        <p class="leading-relaxed text-left">
+                            Machine learning is a subset of artificial intelligence that uses algorithms to analyze data and make
+                            predictions or decisions.
+                            <span class="hidden" id="more-text2">
+                                Common applications include image recognition, natural language processing, and recommendation systems.
+                            </span>
+                        </p>
+                        <button id="toggle-btn2" class="mt-4 text-blue-500 focus:outline-none text-left">Read More</button>
+                        <button id="hide-btn2" class="hidden mt-4 text-blue-500 focus:outline-none text-left">Hide</button>
+                    </div>
+            
+                    <div class="mt-2 flex justify-between items-center text-sm text-gray-500">
+                        <!-- Left Side: Tags -->
+                        <div class="flex space-x-3 rounded-full">
+                            <span class="bg-gray-700 px-2 py-1 rounded-full hover:text-white">Python</span>
+                            <span class="bg-gray-700 px-2 py-1 rounded-full hover:text-white">Data Science</span>
+                            <span class="bg-gray-700 px-2 py-1 rounded-full hover:text-white">Model Building</span>
+                            <span>Updated 1 hour ago</span>
+                        </div>
+            
+                        <!-- Right Side: Button -->
+                        <button type="button"
+                            class="py-1 px-5 border-2 border-blue-600 text-blue-600 font-semibold rounded-full hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                            onmouseover="this.style.backgroundColor='#4B90F9'; this.style.color='white';"
+                            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#4B90F9';">
+                            View Details →
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <div class="bg-gray-800 p-4 rounded-lg shadow">
+                    <!-- Profile Trigger -->
+                    <a href="#" class="flex items-center space-x-4" id="user-profile-trigger2">
+                        <!-- Profile Image -->
+                        <img
+                            class="w-10 h-10 rounded-full"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRfpo86SB6nHTlhI0FZFHPbdDb-y_QKJuvx6ugVdIEn1chvgrONhKsaG_spVs9sxjv84&usqp=CAU"
+                            alt="Anna Doe"
+                        />
+                        <!-- Name and Username -->
+                        <div>
+                            <p class="text-base font-semibold text-gray-900 dark:text-white">Anna Doe</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">@annadoe</p>
+                        </div>
+                    </a>
+                
+                    <!-- PopOver Information -->
+                    <div id="popover-user-profile2"
+                        class="absolute z-10 hidden w-64 mt-2 text-sm text-gray-500 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+                        <div class="p-3">
+                            <div class="flex items-center justify-between mb-2">
+                                <a href="#">
+                                    <img class="w-10 h-10 rounded-full"
+                                        src="https://via.placeholder.com/100"
+                                        alt="Anna Doe">
+                                </a>
+                                <div>
+                                    <button type="button"
+                                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Follow</button>
+                                </div>
+                            </div>
+                            <p class="text-base font-semibold leading-none text-gray-900 dark:text-white">
+                                <a href="#">Anna Doe</a>
+                            </p>
+                            <p class="mb-3 text-sm font-normal">
+                                <a href="#" class="hover:underline">@annadoe</a>
+                            </p>
+                            <ul class="flex text-sm">
+                                <li class="me-2">
+                                    <a href="#" class="hover:underline">
+                                        <span class="font-semibold text-gray-900 dark:text-white">456</span>
+                                        <span>Following</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">
+                                        <span class="font-semibold text-gray-900 dark:text-white">1,234</span>
+                                        <span>Followers</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <!-- Post Content -->
+                    <div class="">
+                        <h1 class="font-bold text-xl text-left mt-4">Deep Learning in AI</h1>
+                        <p class="leading-relaxed text-left">
+                            Deep learning is a subset of machine learning that mimics the workings of the human brain in processing data and creating patterns.
+                            <span class="hidden" id="more-text2">
+                                It's extensively used in image recognition, natural language processing, and robotics. Deep learning models rely on neural networks.
+                            </span>
+                        </p>
+                        <button id="toggle-btn2" class="mt-4 text-blue-500 focus:outline-none text-left">Read More</button>
+                        <button id="hide-btn2" class="hidden mt-4 text-blue-500 focus:outline-none text-left">Hide</button>
+                    </div>
+                
+                    <!-- JavaScript for toggle -->
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const toggleBtn2 = document.getElementById("toggle-btn2");
+                            const hideBtn2 = document.getElementById("hide-btn2");
+                            const moreText2 = document.getElementById("more-text2");
+                
+                            toggleBtn2.addEventListener("click", () => {
+                                moreText2.classList.remove("hidden");
+                                toggleBtn2.classList.add("hidden");
+                                hideBtn2.classList.remove("hidden");
+                            });
+                
+                            hideBtn2.addEventListener("click", () => {
+                                moreText2.classList.add("hidden");
+                                hideBtn2.classList.add("hidden");
+                                toggleBtn2.classList.remove("hidden");
+                            });
+                        });
+                    </script>
+                
+                    <div class="mt-2 flex justify-between items-center text-sm text-gray-500">
+                        <div class="flex space-x-3 rounded-full">
+                            <span class="bg-gray-700 px-2 py-1 rounded-full hover:text-white">AI</span>
+                            <span class="bg-gray-700 px-2 py-1 rounded-full hover:text-white">Neural Networks</span>
+                            <span class="bg-gray-700 px-2 py-1 rounded-full hover:text-white">Jupyter Notebook</span>
+                            <span>Updated 1 day ago</span>
+                        </div>
+                        <button type="button"
+                            id="btn2"
+                            class="py-1 px-5 border-2 border-blue-600 text-blue-600 font-semibold rounded-full hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            View Details →
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+
+            
+      
+</body>
+</html>
